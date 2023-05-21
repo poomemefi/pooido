@@ -1,16 +1,40 @@
-# Sample Hardhat Project
+# POO ERC20 Token Swap Smart Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This repository contains the code for an Ethereum-based ERC20 token swap smart contract. This contract allows users to deposit ETH and receive $POO tokens in exchange.
 
-Try running some of the following tasks:
+## Key Features
 
-```shell
-npx hardhat help
+- Min Cap:  Users can deposit a minimum of 0.001 ETH
+- Max Cap:  Users can deposit a maximum cap of 10 ETH
+- Swap Rate:  1 ETH = 11,5200,000,000 $POO
+- The contract will close once all 1,600,000,000,000 deposited $POO tokens are exchanged for 138.888 ETH and reject any deposits beyond that with refunds sent back to the sender’s wallet addresses
+- The contract is deployed and controlled by the master address: 0x6A3913caB99304F9e145C99D60017fa38FcD2CE4
+- The contract includes a reserve pool that accepts token deposits from any address for any token
+- The master contract admin address can withdraw any tokens (both ETH and $POO) deposited into the reserve at any time
+- The contract can be updated and redeployed at any time
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/erc20-token-swap.git
+
+
+2. Install dependencies
+npm install
+
+
+3. Compile the smart contract
+npx hardhat compile
+
+
+4. Deploy the smart contract
+npx hardhat run scripts/deploy.js --network <network>
+
+
+Testing
+To run the test suite, execute the following command:
+
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
-
-PooMeme:  0x2aCEb74d254191929247a3DD47f03e8578aF71C2
-TokenSwap:  0x0FD147634877a6B39195896fa1FE39304C434409
