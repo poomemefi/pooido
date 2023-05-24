@@ -5,7 +5,7 @@ This repository contains the code for an Ethereum-based ERC20 token swap smart c
 ## Key Features
 
 - Min Cap:  Users can deposit a minimum of 0.001 ETH
-- Max Cap:  Users can deposit a maximum cap of 10 ETH
+- Max Cap:  Users can deposit a maximum cap of 2 ETH
 - Swap Rate:  1 ETH = 11,5200,000,000 $POO
 - The contract will close once all 1,600,000,000,000 deposited $POO tokens are exchanged for 138.888 ETH and reject any deposits beyond that with refunds sent back to the sender’s wallet addresses
 - The contract is deployed and controlled by the master address: 0x6A3913caB99304F9e145C99D60017fa38FcD2CE4
