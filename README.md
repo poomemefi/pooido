@@ -19,7 +19,7 @@ To get started with this project, follow these steps:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/erc20-token-swap.git
+git clone https://github.com/poomemefi/poopresale.git
 
 
 2. Install dependencies
